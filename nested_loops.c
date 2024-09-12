@@ -25,30 +25,31 @@ int main(int argc, char const *argv[])
 
    // here we will make a function to print a rectangle
 
-   int rows;
-   int coloums;
+    int rows;
+    int coloums;
+    char symbol;
 
-   char symbol;
+    // Get user input
+    printf("Enter num of rows: \n");
+    scanf("%d", &rows);
 
-   printf("Enter num of rows: \n");
-   scanf("%d", &rows);
+    printf("Enter num of coloums: \n");
+    scanf("%d", &coloums);
 
-   printf("Enter num of coloums: \n");
-   scanf("%d", &coloums);
+    printf("Enter a symbol: \n");
+    scanf(" %c", &symbol);  // Notice the space before %c to ignore newline character
 
-   printf("Enter a symbol: \n");
-   scanf("%c", &symbol);
-
-   for (int i = 0; i <= rows; i++)
-   {
-        for (int j = 0; i <= coloums; j++)
+    // Loop to print the rectangle
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < coloums; j++)
         {
-            printf("%c",symbol);
+            printf("%c", symbol);
         }
-        
-        printf(" ");
-   }
-   
+        printf("\n");  // Move to the next line after each row
+    }
+
+    return 0;
 
     return 0;
 }

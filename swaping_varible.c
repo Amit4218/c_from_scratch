@@ -35,8 +35,8 @@ int main(int argc, char const *argv[])
 
     // --------- Example ----------- //
 
-    char x [] = "hello";
-    char y [] = "world!";
+    char x [15] = "hello";
+    char y [15] = "world!";
     char z [15] ; // marking a temporary arry and giving it a max.
 
     strcpy(z, x);

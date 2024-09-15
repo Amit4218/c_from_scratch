@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
    struct player user;
 
    strcpy(user.name, "amit"); // use " . " to acces the variable inside the struct 
-   user.age = 19;
+   user.age = 19; // assining value
  
     printf("%s",user.name);
     printf("%d",user.age);
